@@ -503,8 +503,24 @@ footer ul {
     .photoettextService {
         flex-direction: column-reverse;
         margin: auto;
-        width: 50%;
         height: auto;
+    }
+
+    .elementTextPhoto {
+        flex-direction: column;
+    }
+
+    .photoEmploye {
+        flex-direction: row;
+    }
+
+    #employe2, #employe1, #employe3 {
+        width: 150%;
+        height: 150%;
+    }
+
+    .part1text {
+        margin-top: 40%;
     }
 
     .pictoCarMoto img {
