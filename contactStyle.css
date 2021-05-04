@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Jura:wght@300&display=swap');
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+#backgroundMoto {
+    position: absolute;
+    top: 0;
+    filter: brightness(100%);
+    width: 100%;
+    filter: blur(15px);
+    z-index: -500;
+    transform: scale(1.1); 
+}
+
+.backgroundBlur {
+    position: absolute;
+    top: 0;
+    filter: blur(26px);
+    z-index: 500;
+    width: 1920px;
+}
+
+nav img {
+    width: auto;
+}
+
+nav {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 29px;
+    margin: 0 10% 0 10%;
+    width: 80%;
+}
+
+
+nav li a {
+    font-family: 'Black Ops One', cursive;
+    color: white;
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+#accueilNav {
+    margin-right: 150px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+/* MAIN */ 
+
+h1 {
+    font-family: 'Black Ops One', cursive;
+    color: white;
+    font-size: 60px;
+    text-shadow: 1px 26px 0px rgba(255, 255, 255, 0.23);
+    margin-left: 15%;
+    margin-top: 12%;
+}
+
+
+form {
+    background: transparent radial-gradient(closest-side at 72% 61%, #2E004F 0%, #5C0053 35%, #57008A 72%, #600085 86%, #810072 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #FFFFFFC7;
+    mix-blend-mode: screen;
+    opacity: 1;
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+form ::placeholder {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+form label {
+    display: none;
+}
+
+form h2 {
+    font-family: 'Jura', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+form input {
+    height: 54px;
+    width: 70%;
+    background: rgb(180, 128, 175);
+}
+
+input [type="text"]
+{
+    font-family: 'Jura', sans-serif;
+    color: white;
+    font-size:24px;
+}
+
+textarea
+{
+    font-family: 'Jura', sans-serif;
+    color: white;
+    font-size:24px;
+}
+
+form textarea {
+    width: 70%;
+    background: rgb(180, 128, 175);
+}
+
+/* FOOTER */ 
+
+footer {
+    border-top: solid 1.2px;
+    color: white;
+    padding: 2%;
+    background: rgb(87,0,138);
+    background: linear-gradient(90deg, rgba(87,0,138,1) 36%, rgba(126,0,116,1) 63%, rgba(129,0,114,1) 94%);
+}
+
+#imgFooter {
+    text-align: center;
+}
+
+footer img {
+    margin: auto;
+}
+
+footer h5 {
+    font-family: 'Black Ops One', cursive;
+    color: white;
+    font-size: 35px;
+}
+
+.elementFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 8% 0 8%;
+
+}
+
+footer p, ul {
+    list-style: none;
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+footer ul {
+    float:left;
+    margin: 0;
+    padding: 0;
+}
+
+.ctnMentions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.ctnMentions p {
+    font-family: 'Black Ops One', cursive;
+    color: white;
+    font-size: 20px;
+    margin: 5% 0 0 0;
+}
+
+.ctnMentions a {
+    text-decoration: none;
+    font-family: 'Black Ops One', cursive;
+    color: white;
+    font-size: 20px;
+    margin: 5% 5% 0 0;
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    #backgroundMoto {
+        transform: none;
+        height: fit-content;
+    }
+    
+    .backgroundBlur {
+
+        width: 100%;
+        height: fit-content;
+        background-size: contain;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        margin-top: 20%;
+    }
+
+    #accueilNav {
+        display: none;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    .elementFooter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .elementFooter ul {
+        padding: revert;
+        text-align: center;
+        float: revert;
+    }
+
+ }
+
+ @media screen and (max-width: 425px) {
+
+    h1 {
+        font-size: 25px;
+        margin-top: 40%;
+        margin-bottom: 10%;
+    }
+ }
